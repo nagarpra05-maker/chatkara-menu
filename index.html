@@ -145,7 +145,7 @@
                         </div>
                         <p class="text-xs text-stone-600">2 Rotis, rice, dal, paneer curry, mixed veg, papad, salad & sweet dessert</p>
                     </div>
-                    <div class="text-right font-bold text-brand-red text-base whitespace-nowrap pt-3">₹190</div>
+                    <div class="text-right font-bold text-brand-red text-base whitespace-nowrap pt-3">₹90</div>
                 </div>
             </div>
         </section>
@@ -707,9 +707,12 @@
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
-        // Get dynamic menu URL
+        // Set fixed GitHub Pages live menu URL
+        const LIVE_MENU_URL = 'https://nagarpra05-maker.github.io/chatkara-menu/';
+
+        // Get target menu URL (fallback to window location if not hosted)
         function getMenuURL() {
-            return window.location.href;
+            return LIVE_MENU_URL || window.location.href;
         }
 
         // Copy Link function
